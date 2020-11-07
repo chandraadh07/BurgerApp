@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox_Burger"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Burger"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_Drink"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:checked="true"
+            android:text="Drink"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_Snack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:checked="true"
+            android:text="Snack"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/forSpinner">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/txt_Sortby"
+            android:text="Sort By:"
+            android:textSize="30sp"/>
+
+
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="#aa66cc"
+            android:layout_height="match_parent"
+            android:scrollbarSize="20sp"
+            android:id="@+id/type_spinner"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/food_recycler"
+        android:orientation="vertical"/>
+
+
+    <Button
+            android:id="@+id/btn_Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="bottom"
+            android:text="Calculate"
+            android:background="@color/colorAccent"
+            android:textSize="50sp"/>
+
+
+
+
+
+
+
+</LinearLayout>
